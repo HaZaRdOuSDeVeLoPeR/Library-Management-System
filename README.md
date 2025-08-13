@@ -38,7 +38,7 @@ It supports **CRUD operations**, **book issuing/returning**, and **transaction m
 - **Language:** C++17
 - **Data Storage:** CSV files
 - **Concepts Used:**
-  - Object-Oriented Programming (Encapsulation, Inheritance)
+  - Object-Oriented Programming (Abstraction, Encapsulation, Inheritance)
   - STL Containers (`unordered_map`, `unordered_set`, `vector`)
   - File I/O (`ifstream`, `ofstream`)
   - String parsing (`stringstream`)
