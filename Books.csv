@@ -1,0 +1,11 @@
+BookID,Title,Author,Genre,Available
+107,Artificial Intelligence: A Modern Approach,Stuart Russell,AI,Yes
+108,Design Patterns,Erich Gamma,Software Engg,Yes
+109,Digital Logic and Computer Design,M. Morris Mano,Electronics,Yes
+110,The Pragmatic Programmer,Andrew Hunt,Coding,Yes
+106,The C++ Programming Language,Bjarne Stroustrup,Coding,No
+105,Computer Networks,Andrew S. Tanenbaum,Networking,Yes
+101,Introduction to Algorithms,Thomas H. Cormen,Algorithms,Yes
+102,Clean Code,Robert C. Martin,Coding,Yes
+103,Operating System Concepts,Abraham Silberschatz,OS,Yes
+104,Database System Concepts,Henry F. Korth,DBMS,No
