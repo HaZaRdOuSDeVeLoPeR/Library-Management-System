@@ -38,7 +38,7 @@ It supports **CRUD operations**, **book issuing/returning**, and **transaction m
 - **Language:** C++17
 - **Data Storage:** CSV files
 - **Concepts Used:**
-  - Object-Oriented Programming (Abstraction, Encapsulation, Inheritance)
+  - Object-Oriented Programming (Encapsulation, Inheritance)
   - STL Containers (`unordered_map`, `unordered_set`, `vector`)
   - File I/O (`ifstream`, `ofstream`)
   - String parsing (`stringstream`)
@@ -76,6 +76,6 @@ Issues.csv
 Issues.csv
 
 TransactionID,StudentID,BookID,Borrow_Date,Return_Date
-10106,12,104,2024-09-15,Overdue
-10364,18,106,2024-08-06,Overdue
-78519,134,109,2025-02-12,2025-05-21
+78519,134,109,12-02-2025,21-05-2025
+10106,12,104,15-09-2024,Overdue
+10364,18,106,06-08-2024,Overdue
