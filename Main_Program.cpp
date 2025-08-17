@@ -66,7 +66,7 @@ bool validate_date(string &date){
     }
 }
 void reverse_date(string &date){
-    if(date=="Overdue") return;
+    if(date=="Overdue" or date=="0") return;
     stringstream ss(date);
     string day,month,year;
     getline(ss,day,'-'); getline(ss,month,'-'); getline(ss,year,'-');
@@ -85,7 +85,7 @@ class Students{
     vector<string> attributes={"StudentID","Name","Branch","Year"};
     vector<string> type={"Int","String","String","Int"};
     vector<string> typeInfo={typeid(int).name(),typeid(string).name(),typeid(string).name(),typeid(int).name()};
-    unordered_set<int> studentID;
+    set<int> studentID;
 
     unordered_map<int,string> id_name;
     unordered_map<int,string> id_branch;
@@ -310,7 +310,7 @@ class Books{
     vector<string> attributes={"BookID","Title","Author","Genre","Available"};
     vector<string> type={"Int","String","String","String","String"};
     vector<string> typeInfo={typeid(int).name(),typeid(string).name(),typeid(string).name(),typeid(string).name(),typeid(string).name()};
-    unordered_set<int> bookID;
+    set<int> bookID;
 
     unordered_map<int,string> id_title;
     unordered_map<int,string> id_author;
@@ -346,7 +346,6 @@ class Books{
             while (getline(ss, field, ',')) {
                 row.push_back(field);
             }
-
             int id=stoi(row[0]);
             string title=row[1], author=row[2], genre=row[3], available=row[4];    // getting column values
             if(available=="Yes" or available=="No");
@@ -472,9 +471,9 @@ class Books{
 
     void display_Books(unordered_set<int> &selected){
         cout<<"\n";
-        cout<<setw(6)<<"BookID"<<setw(30)<<"Title"<<setw(20)<<"Author"<<setw(10)<<"Genre"<<setw(12)<<"Available"<<"\n";
+        cout<<setw(6)<<"BookID"<<setw(80)<<"Title"<<setw(40)<<"Author"<<setw(10)<<"Genre"<<setw(12)<<"Available"<<"\n";
         for(auto &x:selected){
-            cout<<setw(6)<<x<<setw(30)<<id_title[x]<<setw(20)<<id_author[x]<<setw(10)<<id_genre[x]<<setw(12)<<id_available[x]<<"\n";
+            cout<<setw(6)<<x<<setw(80)<<id_title[x]<<setw(40)<<id_author[x]<<setw(10)<<id_genre[x]<<setw(12)<<id_available[x]<<"\n";
         }
         cout<<"\nFetched "<<selected.size()<<" rows Successfully\n";
     }
@@ -556,7 +555,7 @@ class Library : protected Students, protected Books{
     vector<string> attributes={"TransactionID","StudentID","BookID","Borrow_Date","Return_Date"};
     vector<string> type={"Int","Int","Int","String","String"};
     vector<string> typeInfo={typeid(int).name(),typeid(int).name(),typeid(int).name(),typeid(string).name(),typeid(string).name()};
-    unordered_set<int> transactionID;
+    set<int> transactionID;
 
     unordered_map<int,pair<int,int>> id_studentID_bookID;
     unordered_map<int,string> id_borrow_date;
@@ -589,7 +588,6 @@ class Library : protected Students, protected Books{
             stringstream ss(line);
             string field;
             vector<string> row;
-
             // Split line by comma
             while (getline(ss, field, ',')) {
                 row.push_back(field);
@@ -604,21 +602,15 @@ class Library : protected Students, protected Books{
             string b_date=row[3], r_date=row[4];                         // getting column values
 
             if(transactionID.find(id)==transactionID.end() and bookID.find(bid)!=bookID.end() and studentID.find(sid)!=studentID.end()){
-                if((r_date=="Overdue" and id_available[bid]=="No") or (r_date!="Overdue" and id_available[bid]=="Yes")){
-                    transactionID.insert(id);
-                    id_studentID_bookID[id]={sid,bid};
-                    id_borrow_date[id]=b_date;
-                    id_return_date[id]=r_date;
-                    
-                    studentID_id[sid].insert(id);
-                    bookID_id[bid].insert(id);
-                    borrow_date_id[b_date].insert(id);
-                    return_date_id[r_date].insert(id);
-                }
-                else{
-                    cout<<"Book Available Status Mismatch\n";
-                    exit(0);
-                }
+                transactionID.insert(id);
+                id_studentID_bookID[id]={sid,bid};
+                id_borrow_date[id]=b_date;
+                id_return_date[id]=r_date;
+                
+                studentID_id[sid].insert(id);
+                bookID_id[bid].insert(id);
+                borrow_date_id[b_date].insert(id);
+                return_date_id[r_date].insert(id);
             }
         }
     }
@@ -1024,16 +1016,16 @@ class Library : protected Students, protected Books{
 
     void display_Records(unordered_set<int> &selected){
         cout<<"\n";
-        cout<<setw(12)<<"TransactionID"<<setw(12)<<"StudentID"<<setw(20)<<"StudentName"<<setw(10)<<"BookID"<<setw(35)<<"BookName"<<setw(15)<<"BorrowDate"<<setw(15)<<"ReturnDate"<<"\n";
+        cout<<setw(12)<<"TransactionID"<<setw(12)<<"StudentID"<<setw(20)<<"StudentName"<<setw(10)<<"BookID"<<setw(70)<<"BookName"<<setw(15)<<"BorrowDate"<<setw(15)<<"ReturnDate"<<"\n";
         for(auto &x:selected){
-            cout<<setw(133)<<x<<setw(12)<<id_studentID_bookID[x].first<<setw(20)<<id_name[id_studentID_bookID[x].first]<<setw(10)
-            <<id_studentID_bookID[x].second<<setw(35)<<id_title[id_studentID_bookID[x].second]<<setw(15)<<id_borrow_date[x]<<setw(15)<<id_return_date[x]<<"\n";
+            cout<<setw(12)<<x<<setw(12)<<id_studentID_bookID[x].first<<setw(20)<<id_name[id_studentID_bookID[x].first]<<setw(10)
+            <<id_studentID_bookID[x].second<<setw(70)<<id_title[id_studentID_bookID[x].second]<<setw(15)<<id_borrow_date[x]<<setw(15)<<id_return_date[x]<<"\n";
         }
         cout<<"\nFetched "<<selected.size()<<" rows Successfully\n";
     }
 
     unordered_set<int> select_Records(int tid, int sid, int bid, string bdate, string rdate, string optr){
-        // cout<<tid<<" "<<sid<<" "<<bid<<" "<<bdate<<" "<<rdate<<" "<<optr<<"\n";
+        cout<<bdate<<" "<<rdate<<"\n";
         if(optr=="BEFORE" or optr=="AFTER" or optr=="ON"){       // if select operation is date
             unordered_set<int> selected;
             if(tid==0 and sid==0 and bid==0){       // other operands must be null
@@ -1050,7 +1042,7 @@ class Library : protected Students, protected Books{
                         }
                         else{               // if operation is on rdate
                             for(auto &back:return_date_id){
-                                if(back.first<bdate and back.first!="Overdue"){
+                                if(back.first<rdate and back.first!="Overdue"){
                                     for(auto &tids:back.second){
                                         selected.insert(tids);
                                     }
@@ -1070,7 +1062,8 @@ class Library : protected Students, protected Books{
                         }
                         else{               // if operation is on rdate
                             for(auto &back:return_date_id){
-                                if(back.first>bdate or back.first=="Overdue"){
+                                if(back.first>rdate or back.first=="Overdue"){
+                                    cout<<back.first<<" "<<bdate<<"\n";
                                     for(auto &tids:back.second){
                                         selected.insert(tids);
                                     }
@@ -1090,7 +1083,7 @@ class Library : protected Students, protected Books{
                         }
                         else{               // if operation is on rdate
                             for(auto &back:return_date_id){
-                                if(back.first==bdate and back.first!="Overdue"){
+                                if(back.first==rdate and back.first!="Overdue"){
                                     for(auto &tids:back.second){
                                         selected.insert(tids);
                                     }
