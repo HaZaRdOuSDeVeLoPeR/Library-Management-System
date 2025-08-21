@@ -1,77 +1,88 @@
 #include<bits/stdc++.h>
 using namespace std;
-bool check_number(string &number){
-    for(int i=0;i<number.length();i++){
-        if(!isdigit(number[i])) return false;
-    }   
-    return true;
-}
-bool process_brackets(string &line){
-    if(line[0]!='(' or line.back()!=')'){
-        cout<<"Missing Brackets\n";
-        return false;
-    }
-    line.erase(line.begin());
-    line.pop_back();
-    return true;
-}
-bool process_attributes(string &line, vector<string> &processed, char seperator, vector<string> &typeInfo, vector<string> &attributes, vector<string> &type, int end, int offset, bool state){
-    stringstream ss(line);
-    string vals;
+class Helper{
+    private:
+    friend class Students;
+    friend class Books;
+    friend class Library;
 
-    int i=offset;
-    while(i<end and getline(ss,vals,seperator)){
-        if(vals[0]=='\'' and vals.back()=='\''){
-            vals.erase(vals.begin());
-            vals.pop_back();
-            if(vals.length() and typeInfo[i]==typeid(string).name()) processed.push_back(vals);
-            else{
-                cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
-                return false;
-            }
-        }
-        else if(check_number(vals)){
-            if(vals.length() and typeInfo[i]==typeid(int).name()) processed.push_back(vals);
-            else{
-                cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
-                return false;
-            }
-        }
-        else{
-            cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
+    static bool check_number(string &number){
+        for(int i=0;i<number.length();i++){
+            if(!isdigit(number[i])) return false;
+        }   
+        return true;
+    }
+
+    static bool process_brackets(string &line){
+        if(line[0]!='(' or line.back()!=')'){
+            cout<<"Missing Brackets\n";
             return false;
         }
-        i++;
+        line.erase(line.begin());
+        line.pop_back();
+        return true;
     }
 
-    if(state and getline(ss,vals,seperator)){
-        if(vals=="0" or vals=="AND" or vals=="OR" or vals=="ON" or vals=="BEFORE" or "AFTER") processed.push_back(vals);
-    }
-    else if(state){
-        cout<<"Missing operator\n";
-        return false;
+    static bool process_attributes(string &line, vector<string> &processed, char seperator, vector<string> &typeInfo, vector<string> &attributes, vector<string> &type, int end, int offset, bool state){
+        stringstream ss(line);
+        string vals;
+
+        int i=offset;
+        while(i<end and getline(ss,vals,seperator)){
+            if(vals[0]=='\'' and vals.back()=='\''){
+                vals.erase(vals.begin());
+                vals.pop_back();
+                if(vals.length() and typeInfo[i]==typeid(string).name()) processed.push_back(vals);
+                else{
+                    cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
+                    return false;
+                }
+            }
+            else if(check_number(vals)){
+                if(vals.length() and typeInfo[i]==typeid(int).name()) processed.push_back(vals);
+                else{
+                    cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
+                    return false;
+                }
+            }
+            else{
+                cout<<attributes[i]<<" must be of type "<<type[i]<<"\n";
+                return false;
+            }
+            i++;
+        }
+
+        if(state and getline(ss,vals,seperator)){
+            if(vals=="0" or vals=="AND" or vals=="OR" or vals=="ON" or vals=="BEFORE" or "AFTER") processed.push_back(vals);
+        }
+        else if(state){
+            cout<<"Missing operator\n";
+            return false;
+        }
+
+        if(processed.size()>=end-offset) return true;
+        else{
+            cout<<"Missing Attributes\n";
+            return false;
+        }
     }
 
-    if(processed.size()>=end-offset) return true;
-    else{
-        cout<<"Missing Attributes\n";
-        return false;
+    static bool validate_date(string &date){
+        if((isdigit(date[0]) and isdigit(date[1]) and date[2]=='-' and isdigit(date[3]) and isdigit(date[4]) and date[5]=='-' and isdigit(date[6]) and isdigit(date[7]) and isdigit(date[8]) and isdigit(date[9])) or date=="Overdue") return true;
+        else{
+            cout<<"Wrong Date\n";
+            return false;
+        }
     }
-}
-bool validate_date(string &date){
-    if((isdigit(date[0]) and isdigit(date[1]) and date[2]=='-' and isdigit(date[3]) and isdigit(date[4]) and date[5]=='-' and isdigit(date[6]) and isdigit(date[7]) and isdigit(date[8]) and isdigit(date[9])) or date=="Overdue") return true;
-    else{
-        cout<<"Wrong Date\n";
-        return false;
+    
+    static void reverse_date(string &date){
+        if(date=="Overdue" or date=="0") return;
+        stringstream ss(date);
+        string day,month,year;
+        getline(ss,day,'-'); getline(ss,month,'-'); getline(ss,year,'-');
+        date=year+'-'+month+'-'+day;
     }
-}
-void reverse_date(string &date){
-    if(date=="Overdue" or date=="0") return;
-    stringstream ss(date);
-    string day,month,year;
-    getline(ss,day,'-'); getline(ss,month,'-'); getline(ss,year,'-');
-    date=year+'-'+month+'-'+day;
-}
+};
 // struct Student{
 //     int studentID;
 //     string name;
@@ -80,7 +91,7 @@ void reverse_date(string &date){
 class Students{
     private:
     string file_name;
-    
+
     protected:
     vector<string> attributes={"StudentID","Name","Branch","Year"};
     vector<string> type={"Int","String","String","Int"};
@@ -161,11 +172,11 @@ class Students{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',typeInfo,attributes,type,4,0,false));
+        if(Helper::process_attributes(line,input,',',typeInfo,attributes,type,4,0,false));
         else return;
 
         int id=stoi(input[0]),year=stoi(input[3]);
@@ -305,7 +316,7 @@ class Students{
 class Books{
     private:
     string file_name;
-    
+
     protected:
     vector<string> attributes={"BookID","Title","Author","Genre","Available"};
     vector<string> type={"Int","String","String","String","String"};
@@ -394,11 +405,11 @@ class Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',typeInfo,attributes,type,4,0,false));
+        if(Helper::process_attributes(line,input,',',typeInfo,attributes,type,4,0,false));
         else return;
 
         int id=stoi(input[0]);
@@ -593,12 +604,12 @@ class Library : protected Students, protected Books{
                 row.push_back(field);
             }
 
-            if(validate_date(row[3]) and validate_date(row[4]));
+            if(Helper::validate_date(row[3]) and Helper::validate_date(row[4]));
             else return;
 
             int id=stoi(row[0]), sid=stoi(row[1]), bid=stoi(row[2]);
-            reverse_date(row[3]);
-            reverse_date(row[4]);
+            Helper::reverse_date(row[3]);
+            Helper::reverse_date(row[4]);
             string b_date=row[3], r_date=row[4];                         // getting column values
 
             if(transactionID.find(id)==transactionID.end() and bookID.find(bid)!=bookID.end() and studentID.find(sid)!=studentID.end()){
@@ -630,8 +641,8 @@ class Library : protected Students, protected Books{
             string row="";
             row+=to_string(x); row+=','; row+=to_string(id_studentID_bookID[x].first); row+=','; row+=to_string(id_studentID_bookID[x].second); row+=',';
 
-            reverse_date(id_borrow_date[x]);
-            reverse_date(id_return_date[x]);
+            Helper::reverse_date(id_borrow_date[x]);
+            Helper::reverse_date(id_return_date[x]);
 
             row+=id_borrow_date[x]; row+=','; row+=id_return_date[x]; row+='\n';
             output<<row;
@@ -704,11 +715,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
+        if(Helper::process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
         else return;
 
         int id=stoi(input[0]),year=stoi(input[3]);
@@ -720,11 +731,11 @@ class Library : protected Students, protected Books{
         cout<<"Enter in Order (Name, Branch, Year) : ";
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         input.clear();
-        if(process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,1,false));
+        if(Helper::process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,1,false));
         else return;
 
         name=input[0], branch=input[1], year=stoi(input[2]);
@@ -739,11 +750,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,0,true));
+        if(Helper::process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,0,true));
         else return;
 
         string title=input[1], author=input[2], genre=input[3], optr=input.back();
@@ -754,11 +765,11 @@ class Library : protected Students, protected Books{
         cout<<"Enter in Order (Title, Author, Genre) : ";
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         input.clear();
-        if(process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,1,false));
+        if(Helper::process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,1,false));
         else return;
 
         title=input[0], author=input[1], genre=input[2];
@@ -773,11 +784,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
+        if(Helper::process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
         else return;
 
         int id=stoi(input[0]),year=stoi(input[3]);
@@ -795,11 +806,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,0,true));
+        if(Helper::process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,4,0,true));
         else return;
 
         int id=stoi(input[0]);
@@ -816,21 +827,21 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,5,0,true));
+        if(Helper::process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,5,0,true));
         else return;
 
         int tid=stoi(input[0]), sid=stoi(input[1]), bid=stoi(input[2]);
         string bdate=input[3], rdate=input[4], optr=input.back();
 
-        if((bdate=="0" or validate_date(bdate)) and (rdate=="0" or validate_date(rdate)));
+        if((bdate=="0" or Helper::validate_date(bdate)) and (rdate=="0" or Helper::validate_date(rdate)));
         else return;
 
-        reverse_date(bdate);
-        reverse_date(rdate);
+        Helper::reverse_date(bdate);
+        Helper::reverse_date(rdate);
         unordered_set<int> selected=select_Records(tid,sid,bid,bdate,rdate,optr);
         display_Records(selected);
     }
@@ -842,11 +853,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
+        if(Helper::process_attributes(line,input,',',Students::typeInfo,Students::attributes,Students::type,4,0,true));
         else return;
         
         int id=stoi(input[0]),year=stoi(input[3]);
@@ -883,11 +894,11 @@ class Library : protected Students, protected Books{
         cin.ignore();
         getline(cin,line);
         
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,5,0,true));
+        if(Helper::process_attributes(line,input,',',Books::typeInfo,Books::attributes,Books::type,5,0,true));
         else return;
 
         int id=stoi(input[0]);
@@ -975,20 +986,20 @@ class Library : protected Students, protected Books{
         cout<<"Enter the (TransactionID,StudentID,BookID,BorrowDate) to Issue : ";
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,4,0,false));
+        if(Helper::process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,4,0,false));
         else return;
 
         int tid=stoi(input[0]), sid=stoi(input[1]), bid=stoi(input[2]);
         string bdate=input.back();
 
-        if(validate_date(bdate));
+        if(Helper::validate_date(bdate));
         else return;
 
-        reverse_date(bdate);
+        Helper::reverse_date(bdate);
         insert_Record(tid,sid,bid,bdate);
     }
 
@@ -997,20 +1008,20 @@ class Library : protected Students, protected Books{
         cout<<"Enter the (TransactionID,StudentID,BookID,ReturnDate) to Return : ";
         getline(cin,line);
 
-        if(process_brackets(line));
+        if(Helper::process_brackets(line));
         else return;
 
         vector<string> input;
-        if(process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,4,0,false));
+        if(Helper::process_attributes(line,input,',',Library::typeInfo,Library::attributes,Library::type,4,0,false));
         else return;
 
         int tid=stoi(input[0]), sid=stoi(input[1]), bid=stoi(input[2]);
         string rdate=input.back();
 
-        if(validate_date(rdate));
+        if(Helper::validate_date(rdate));
         else return;
 
-        reverse_date(rdate);
+        Helper::reverse_date(rdate);
         update_Record(tid,sid,bid,rdate);
     }
 
@@ -1164,24 +1175,28 @@ class DatabaseTools{
     void NewDatabase(string student, string book, string issue){
         Libraries[state]=new Library(student,book,issue);
     }
+    
     void Insert(){
         cout<<"Select the Table to Insert:\n1)Students\t2)Books\n";
         cin>>choice;
         if(choice==1) Libraries[state]->insert_Student();
         else if(choice==2) Libraries[state]->insert_Book();
     }
+    
     void Update(){
         cout<<"Select the Table to Update:\n1)Students\t2)Books\n";
         cin>>choice;
         if(choice==1) Libraries[state]->update_Students();
         else if(choice==2) Libraries[state]->update_Books();
     }
+    
     void Delete(){
         cout<<"Select the Table to Delete:\n1)Students\t2)Books\n";
         cin>>choice;
         if(choice==1) Libraries[state]->delete_Students();
         else if(choice==2) Libraries[state]->delete_Books();
     }
+    
     void Search(){
         cout<<"Select the table to Search:\n1)Students\t2)Books\t\t3)Records\n";
         cin>>choice;
@@ -1189,12 +1204,15 @@ class DatabaseTools{
         else if(choice==2) Libraries[state]->search_Books();
         else if(choice==3) Libraries[state]->search_Records();
     }
+    
     void Issue(){
         Libraries[state]->Issue_Book();
     }
+    
     void Return(){
         Libraries[state]->Return_Book();
     }
+    
     void SavePoint(){
         if(state<99){
             Libraries[state+1]=new Library(*Libraries[state]);      // make a copy of current state
@@ -1203,6 +1221,7 @@ class DatabaseTools{
         }
         else cout<<"More than 100 SavePoints Not Allowed\n";
     }
+    
     void RollBack(){
         if(state>0){
             delete(Libraries[state]);       // delete the current state
@@ -1211,6 +1230,7 @@ class DatabaseTools{
         }
         else cout<<"No SavePoints to RollBack\n";
     }
+    
     void Commit(){
         swap(Libraries[0],Libraries[state]);
         for(int i=1;i<=state;i++){
@@ -1221,6 +1241,7 @@ class DatabaseTools{
         Libraries[0]->save_Table();
         cout<<"Successfully Committed\n";
     }
+    
     void Menu(){
         while(choice!=10){
             cout<<"\n\nMAIN MENU\n1) Insert\t2) Update\t3) Delete\t4) Search\n5) Issue\t6) Return\n7) SavePoint\t8) RollBack\t9) Commit\t10) Exit\n";
