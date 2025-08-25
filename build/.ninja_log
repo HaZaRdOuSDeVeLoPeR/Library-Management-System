@@ -1,0 +1,10 @@
+# ninja log v7
+7	425	7778324000633163	CMakeFiles/main.dir/src/main.cpp.obj	7e1d8272b5dd6b04
+13	465	7778324000683181	CMakeFiles/main.dir/src/Helper.cpp.obj	ff466f86a0593a3c
+11	665	7778324000673174	CMakeFiles/main.dir/src/DBTools.cpp.obj	2d7fcd1a14b5c22b
+9	838	7778324000653184	CMakeFiles/main.dir/src/Books.cpp.obj	98b56e13eb8a1ead
+16	879	7778324000723173	CMakeFiles/main.dir/src/Students.cpp.obj	febfa80ea848ba2c
+15	999	7778324000703175	CMakeFiles/main.dir/src/Library.cpp.obj	95fc32688866541
+999	1110	7778324010543466	main.exe	ab93d03d3e695682
+13	343	7778327061659852	CMakeFiles/main.dir/src/main.cpp.obj	7e1d8272b5dd6b04
+344	429	7778327064970014	main.exe	ab93d03d3e695682
