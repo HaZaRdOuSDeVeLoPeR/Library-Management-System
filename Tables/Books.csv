@@ -1,0 +1,501 @@
+BookID,Title,Author,Genre,Available
+107,Artificial Intelligence: A Modern Approach,Stuart Russell,AI,Yes
+108,Design Patterns,Erich Gamma,Software Engg,Yes
+109,Digital Logic and Computer Design,M. Morris Mano,Electronics,Yes
+110,The Pragmatic Programmer,Andrew Hunt,Coding,Yes
+106,The C++ Programming Language,Bjarne Stroustrup,Coding,No
+105,Computer Networks,Andrew S. Tanenbaum,Networking,Yes
+101,Introduction to Algorithms,Thomas H. Cormen,Algorithms,Yes
+102,Clean Code,Robert C. Martin,Coding,Yes
+103,Operating System Concepts,Abraham Silberschatz,OS,No
+104,Database System Concepts,Henry F. Korth,DBMS,No
+111,Operating System Design and Implementation,Abraham Silberschatz,OS,Yes
+112,Algorithms in C++,Bjarne Stroustrup,Algorithms,Yes
+113,Electronic Devices and Circuit Theory - Volume 1,Ian Goodfellow,Electronics,Yes
+114,Digital Signal Processing,Tom Mitchell,Electronics,Yes
+115,Power Electronics,Douglas E. Comer,Electronics,Yes
+116,Network Analysis Architecture and Design - Volume 1,Abraham Silberschatz,Networking,Yes
+117,JavaScript: The Good Parts,Clifford Stein,Coding,Yes
+118,NoSQL Distilled,Kent Beck,DBMS,Yes
+119,Network Programming,Andrew S. Tanenbaum,Networking,Yes
+120,Head First Java,Robert C. Martin,Coding,Yes
+121,Data Warehousing Fundamentals - Volume 2,Kevin P. Murphy,DBMS,No
+122,Electronic Devices and Circuit Theory,Scott Meyers,Electronics,Yes
+123,The Algorithm Design Manual - Volume 2,Larry L. Peterson,Algorithms,No
+124,Machine Learning: A Probabilistic Perspective - 4th Edition,Jim Kurose,AI,No
+125,Electronic Communication Systems,Richard Helm,Electronics,Yes
+126,The Algorithm Design Manual,Ian Goodfellow,Algorithms,Yes
+127,Network Security: Private Communication in a Public World,Abraham Silberschatz,Networking,Yes
+128,Network Analysis Architecture and Design,Andrew S. Tanenbaum,Networking,Yes
+129,Design Patterns: Elements of Reusable Object-Oriented Software,Tom Mitchell,Software Engg,Yes
+130,Computer Vision: Algorithms and Applications,Aaron Courville,AI,Yes
+131,Programming Pearls - Volume 1,David Thomas,Coding,No
+132,Operating System Design and Implementation,Brian W. Kernighan,OS,Yes
+133,The Art of Computer Programming,Bruce S. Davie,Coding,Yes
+134,C++ Primer,Ian Goodfellow,Coding,No
+135,Pattern Recognition and Machine Learning,Henry F. Korth,AI,No
+136,Data Warehousing Fundamentals,Steve McConnell,DBMS,Yes
+137,Graph Algorithms,Tom Mitchell,Algorithms,Yes
+138,Network Security: Private Communication in a Public World,Brian W. Kernighan,Networking,Yes
+139,Wireless Communications and Networks,Joshua Bloch,Networking,Yes
+140,Programming Pearls,Herb Sutter,Coding,Yes
+141,Data Communications and Networking - Revised Edition,Greg Gagne,Networking,No
+142,Linux Kernel Development,Andrew Hunt,OS,Yes
+143,Network Security Essentials,Behrouz A. Forouzan,Networking,Yes
+144,SQL: The Complete Reference - Volume 2,Bjarne Stroustrup,DBMS,Yes
+145,TCP/IP Illustrated - Revised Edition,Raghu Ramakrishnan,Networking,Yes
+146,Reinforcement Learning: An Introduction - 3rd Edition,Clifford Stein,AI,Yes
+147,Fundamentals of Database Systems,Richard Helm,DBMS,Yes
+148,Operating Systems: Internals and Design Principles,Fred Brooks,OS,Yes
+149,Network Programming - 2nd Edition,Martin Fowler,Networking,Yes
+150,Professional C++,Ronald L. Rivest,Coding,Yes
+151,Communication Systems,Steve McConnell,Electronics,Yes
+152,Hands-On Machine Learning,Steve McConnell,AI,Yes
+153,Computer Networking: A Top-Down Approach - Volume 2,Johannes Gehrke,Networking,Yes
+154,Network Analysis Architecture and Design,Greg Gagne,Networking,No
+155,Analog Integrated Circuit Design,Fred Brooks,Electronics,No
+156,The Algorithm Design Manual,Aaron Courville,Algorithms,Yes
+157,Microelectronic Circuits,James Gosling,Electronics,Yes
+158,Python Crash Course,Yoshua Bengio,Coding,Yes
+159,Distributed Operating Systems,Larry L. Peterson,OS,Yes
+160,Digital Design and Computer Architecture,Brian W. Kernighan,Electronics,Yes
+161,Learning Python,Scott Meyers,Coding,Yes
+162,Neural Networks for Pattern Recognition,Stuart Russell,AI,Yes
+163,Clean Architecture,Larry L. Peterson,Software Engg,Yes
+164,Network Security Essentials,James Gosling,Networking,Yes
+165,JavaScript: The Good Parts,Jim Kurose,Coding,Yes
+166,Programming Challenges,Jim Kurose,Algorithms,Yes
+167,JavaScript: The Good Parts,Johannes Gehrke,Coding,Yes
+168,Software Testing: A Craftsman's Approach,Peter Norvig,Software Engg,No
+169,Software Engineering: A Practitioner's Approach,Abraham Silberschatz,Software Engg,Yes
+170,Digital Design and Computer Architecture,Peter Baer Galvin,Electronics,Yes
+171,Programming Pearls,Martin Fowler,Coding,Yes
+172,Database Management Systems,Abraham Silberschatz,DBMS,Yes
+173,Reinforcement Learning: An Introduction,Joshua Bloch,AI,Yes
+174,Windows Internals,Gang of Four,OS,Yes
+175,Hands-On Machine Learning,Robert C. Martin,AI,Yes
+176,Deep Learning,Jim Kurose,AI,Yes
+177,Digital Design and Computer Architecture,Tom Mitchell,Electronics,Yes
+178,Linux Kernel Development,David J. Wetherall,OS,Yes
+179,Understanding the Linux Kernel - Revised Edition,Greg Gagne,OS,Yes
+180,The Mythical Man-Month,Larry L. Peterson,Software Engg,No
+181,The Art of Computer Programming,Joshua Bloch,Coding,No
+182,Distributed Operating Systems,Donald E. Knuth,OS,Yes
+183,The Algorithm Design Manual - Revised Edition,Erich Gamma,Algorithms,Yes
+184,Artificial Intelligence: A Guide to Intelligent Systems - 2nd Edition,Johannes Gehrke,AI,Yes
+185,Programming Pearls - Volume 1,Donald E. Knuth,Coding,Yes
+186,Pattern Recognition and Machine Learning,James Gosling,AI,No
+187,Dynamic Programming for Coding Interviews,Kevin P. Murphy,Algorithms,Yes
+188,You Don't Know JS,Christopher Bishop,Coding,Yes
+189,Windows Internals - Volume 2,Raghu Ramakrishnan,OS,Yes
+190,Communication Systems,Clifford Stein,Electronics,Yes
+191,Distributed Operating Systems,Bruce S. Davie,OS,Yes
+192,Computer Networks and Internets - Volume 2,Jim Kurose,Networking,Yes
+193,You Don't Know JS,Andrew Hunt,Coding,Yes
+194,Reinforcement Learning: An Introduction,Bruce S. Davie,AI,No
+195,Communication Systems - 3rd Edition,Scott Meyers,Electronics,Yes
+196,Database Design for Mere Mortals - Revised Edition,Fred Brooks,DBMS,Yes
+197,Deep Learning - Volume 2,Tom Mitchell,AI,Yes
+198,Learning Python - 4th Edition,Joshua Bloch,Coding,Yes
+199,Artificial Intelligence: A Guide to Intelligent Systems,Erich Gamma,AI,Yes
+200,SQL: The Complete Reference,Peter Norvig,DBMS,Yes
+201,Professional C++,James Gosling,Coding,Yes
+202,Data Structures and Algorithms in Java - Volume 2,Keith W. Ross,Algorithms,Yes
+203,Database Design for Mere Mortals,Andrew S. Tanenbaum,DBMS,Yes
+204,Computer Vision: Algorithms and Applications,Andrew Hunt,AI,No
+205,TCP/IP Illustrated - 3rd Edition,David J. Wetherall,Networking,Yes
+206,Learning Python,Kevin P. Murphy,Coding,Yes
+207,MongoDB: The Definitive Guide,Tom Mitchell,DBMS,No
+208,Digital Design and Computer Architecture,Keith W. Ross,Electronics,Yes
+209,Reinforcement Learning: An Introduction - 2nd Edition,Christopher Bishop,AI,No
+210,Operating System Design and Implementation,Donald E. Knuth,OS,Yes
+211,Artificial Intelligence: A Guide to Intelligent Systems,Andrew S. Tanenbaum,AI,Yes
+212,Database Management Systems - Volume 2,Bruce S. Davie,DBMS,Yes
+213,Computer Networking: A Top-Down Approach,Stuart Russell,Networking,Yes
+214,Electronic Devices and Circuit Theory,Peter Baer Galvin,Electronics,Yes
+215,Network Programming - Volume 1,Martin Fowler,Networking,Yes
+216,Operating Systems: Internals and Design Principles,Stuart Russell,OS,Yes
+217,Software Engineering: A Practitioner's Approach - Volume 1,David J. Wetherall,Software Engg,Yes
+218,Machine Learning: A Probabilistic Perspective,Martin Fowler,AI,Yes
+219,Linux Kernel Development,Kent Beck,OS,Yes
+220,Artificial Intelligence: A Guide to Intelligent Systems - Revised Edition,S. Sudarshan,AI,Yes
+221,Deep Learning,Bjarne Stroustrup,AI,Yes
+222,Pattern Recognition and Machine Learning,Herb Sutter,AI,Yes
+223,Communication Systems,Joshua Bloch,Electronics,No
+224,Effective C++,David J. Wetherall,Coding,Yes
+225,Programming Challenges,Richard Helm,Algorithms,Yes
+226,Software Testing: A Craftsman's Approach,Andrei Alexandrescu,Software Engg,Yes
+227,Effective Java,Ian Goodfellow,Coding,Yes
+228,Linux Kernel Development - 4th Edition,Behrouz A. Forouzan,OS,Yes
+229,Graph Algorithms,William Stallings,Algorithms,Yes
+230,Operating Systems: Three Easy Pieces,James Gosling,OS,Yes
+231,Code Complete - Volume 1,Peter Norvig,Software Engg,Yes
+232,Communication Systems,Kent Beck,Electronics,Yes
+233,Database Design for Mere Mortals,Kent Beck,DBMS,Yes
+234,Operating Systems: Internals and Design Principles,Abraham Silberschatz,OS,Yes
+235,Deep Learning,Martin Fowler,AI,Yes
+236,Programming Challenges - Volume 1,David J. Wetherall,Algorithms,Yes
+237,Effective C++,Kevin P. Murphy,Coding,Yes
+238,Signals and Systems,Keith W. Ross,Electronics,Yes
+239,Windows Internals,Jim Kurose,OS,Yes
+240,Data Structures and Algorithms in Java,Tom Mitchell,Algorithms,Yes
+241,Learning Python - 4th Edition,Thomas H. Cormen,Coding,Yes
+242,Dynamic Programming for Coding Interviews,Scott Meyers,Algorithms,Yes
+243,Real-Time Systems - 4th Edition,Johannes Gehrke,OS,Yes
+244,Learning Python,Larry L. Peterson,Coding,Yes
+245,Network Analysis Architecture and Design,Brian W. Kernighan,Networking,No
+246,Computer Networks and Internets,S. Sudarshan,Networking,Yes
+247,Analog Integrated Circuit Design - Revised Edition,Douglas E. Comer,Electronics,No
+248,Learning Python,Stuart Russell,Coding,Yes
+249,Database System Implementation,Brian W. Kernighan,DBMS,Yes
+250,Communication Systems,Robert C. Martin,Electronics,Yes
+251,Database Internals,Abraham Silberschatz,DBMS,Yes
+252,Distributed Operating Systems - 4th Edition,Stuart Russell,OS,Yes
+253,Code Complete,Christopher Bishop,Software Engg,Yes
+254,Electronic Communication Systems - Revised Edition,Kevin P. Murphy,Electronics,Yes
+255,Programming Challenges - 2nd Edition,Dennis M. Ritchie,Algorithms,Yes
+256,Learning Python,Douglas E. Comer,Coding,Yes
+257,Digital Signal Processing,Jim Kurose,Electronics,Yes
+258,Code Complete,Tom Mitchell,Software Engg,Yes
+259,Advanced Data Structures,Peter Baer Galvin,Algorithms,Yes
+260,Fundamentals of Database Systems,Stuart Russell,DBMS,Yes
+261,Agile Software Development - Revised Edition,Erich Gamma,Software Engg,Yes
+262,The Mythical Man-Month,Brian W. Kernighan,Software Engg,Yes
+263,Digital Signal Processing,Douglas E. Comer,Electronics,Yes
+264,Operating System Design and Implementation - Revised Edition,William Stallings,OS,Yes
+265,Learning Python,David J. Wetherall,Coding,Yes
+266,You Don't Know JS,Robert C. Martin,Coding,Yes
+267,Digital Signal Processing,Douglas E. Comer,Electronics,Yes
+268,Dynamic Programming for Coding Interviews,Larry L. Peterson,Algorithms,Yes
+269,Competitive Programming,Ian Goodfellow,Algorithms,Yes
+270,Network Security: Private Communication in a Public World,Kevin P. Murphy,Networking,Yes
+271,You Don't Know JS - 4th Edition,Stuart Russell,Coding,Yes
+272,Real-Time Systems - Volume 1,William Stallings,OS,Yes
+273,Analog Integrated Circuit Design - 4th Edition,Richard Helm,Electronics,Yes
+274,Database Internals - 4th Edition,Thomas H. Cormen,DBMS,Yes
+275,C++ Primer,Abraham Silberschatz,Coding,No
+276,Operating Systems: Internals and Design Principles,Behrouz A. Forouzan,OS,Yes
+277,UML Distilled - 3rd Edition,James Gosling,Software Engg,Yes
+278,TCP/IP Illustrated,S. Sudarshan,Networking,Yes
+279,Data Warehousing Fundamentals,S. Sudarshan,DBMS,No
+280,AI: A Modern Approach,William Stallings,AI,No
+281,Computer Networking: A Top-Down Approach,Andrei Alexandrescu,Networking,No
+282,Clean Architecture,Erich Gamma,Software Engg,Yes
+283,JavaScript: The Good Parts,Raghu Ramakrishnan,Coding,Yes
+284,Operating System Design and Implementation,Gang of Four,OS,Yes
+285,Computer Vision: Algorithms and Applications,Bjarne Stroustrup,AI,No
+286,Digital Signal Processing,James Gosling,Electronics,Yes
+287,Routing TCP/IP,Kevin P. Murphy,Networking,Yes
+288,Communication Systems,Bjarne Stroustrup,Electronics,Yes
+289,Digital Design and Computer Architecture - Revised Edition,Herb Sutter,Electronics,Yes
+290,Operating Systems: Internals and Design Principles - Revised Edition,Bjarne Stroustrup,OS,Yes
+291,Operating Systems: Internals and Design Principles - 2nd Edition,Larry L. Peterson,OS,No
+292,Network Programming,Keith W. Ross,Networking,Yes
+293,Deep Learning,Douglas E. Comer,AI,Yes
+294,Algorithms Unlocked,Larry L. Peterson,Algorithms,Yes
+295,The Design of the UNIX Operating System,Herb Sutter,OS,Yes
+296,Graph Algorithms,S. Sudarshan,Algorithms,Yes
+297,Algorithm Design - Revised Edition,Douglas E. Comer,Algorithms,Yes
+298,MongoDB: The Definitive Guide - Volume 1,Fred Brooks,DBMS,Yes
+299,Signals and Systems - 4th Edition,Martin Fowler,Electronics,Yes
+300,Network Security Essentials,Aaron Courville,Networking,No
+301,Windows Internals,Donald E. Knuth,OS,Yes
+302,Code Complete - Volume 1,Robert C. Martin,Software Engg,Yes
+303,Database Management Systems - 4th Edition,Erich Gamma,DBMS,Yes
+304,Operating System Design and Implementation,Donald E. Knuth,OS,No
+305,Code Complete,Joshua Bloch,Software Engg,Yes
+306,Electronic Devices and Circuit Theory,Thomas H. Cormen,Electronics,Yes
+307,Power Electronics,Gang of Four,Electronics,Yes
+308,Communication Systems,Behrouz A. Forouzan,Electronics,Yes
+309,Code Complete - 2nd Edition,Raghu Ramakrishnan,Software Engg,Yes
+310,Programming Challenges,Richard Helm,Algorithms,Yes
+311,Refactoring: Improving the Design of Existing Code,Johannes Gehrke,Software Engg,Yes
+312,Computer Networking: A Top-Down Approach,Christopher Bishop,Networking,Yes
+313,Professional C++,Fred Brooks,Coding,Yes
+314,Computer Networking: A Top-Down Approach,Brian W. Kernighan,Networking,Yes
+315,Refactoring: Improving the Design of Existing Code,Johannes Gehrke,Software Engg,Yes
+316,Competitive Programming - Volume 2,Bruce S. Davie,Algorithms,Yes
+317,Power Electronics,Robert C. Martin,Electronics,No
+318,Neural Networks for Pattern Recognition - 2nd Edition,Larry L. Peterson,AI,Yes
+319,Understanding the Linux Kernel,Martin Fowler,OS,No
+320,Signals and Systems - 2nd Edition,Abraham Silberschatz,Electronics,Yes
+321,Analog Integrated Circuit Design,Raghu Ramakrishnan,Electronics,No
+322,Agile Software Development,Tom Mitchell,Software Engg,Yes
+323,The Art of Computer Programming - Volume 1,Erich Gamma,Coding,Yes
+324,Neural Networks for Pattern Recognition,Christopher Bishop,AI,Yes
+325,Software Engineering: A Practitioner's Approach,Stuart Russell,Software Engg,No
+326,Graph Algorithms,Tom Mitchell,Algorithms,Yes
+327,The Algorithm Design Manual,Bjarne Stroustrup,Algorithms,No
+328,Software Engineering: A Practitioner's Approach,William Stallings,Software Engg,Yes
+329,Agile Software Development,S. Sudarshan,Software Engg,Yes
+330,MongoDB: The Definitive Guide,Clifford Stein,DBMS,Yes
+331,Digital Signal Processing - 2nd Edition,S. Sudarshan,Electronics,Yes
+332,Refactoring: Improving the Design of Existing Code,Thomas H. Cormen,Software Engg,Yes
+333,The Art of Computer Programming,David J. Wetherall,Coding,No
+334,Microelectronic Circuits,Peter Norvig,Electronics,Yes
+335,The Design of the UNIX Operating System,Bruce S. Davie,OS,Yes
+336,Data Structures and Algorithms in Java,S. Sudarshan,Algorithms,No
+337,Pattern Recognition and Machine Learning - Volume 2,Ronald L. Rivest,AI,No
+338,Clean Architecture,Joshua Bloch,Software Engg,No
+339,Database Management Systems,James Gosling,DBMS,No
+340,Network Security: Private Communication in a Public World - 4th Edition,Raghu Ramakrishnan,Networking,Yes
+341,Programming Pearls,Brian W. Kernighan,Coding,Yes
+342,Modern Operating Systems - 4th Edition,Yoshua Bengio,OS,Yes
+343,The Elements of Statistical Learning - Revised Edition,David J. Wetherall,AI,No
+344,Network Security Essentials - 3rd Edition,Bruce S. Davie,Networking,Yes
+345,Pattern Recognition and Machine Learning,Martin Fowler,AI,Yes
+346,Linux Kernel Development,Martin Fowler,OS,Yes
+347,Communication Systems - Volume 2,Clifford Stein,Electronics,Yes
+348,VLSI Design - 4th Edition,Larry L. Peterson,Electronics,Yes
+349,Competitive Programming,Donald E. Knuth,Algorithms,No
+350,Electronic Communication Systems - 2nd Edition,David Thomas,Electronics,Yes
+351,Programming Challenges - 4th Edition,Gang of Four,Algorithms,Yes
+352,NoSQL Distilled,Martin Fowler,DBMS,Yes
+353,Network Security: Private Communication in a Public World - 4th Edition,Andrew Hunt,Networking,Yes
+354,Programming Challenges,Kevin P. Murphy,Algorithms,Yes
+355,Microelectronic Circuits,Behrouz A. Forouzan,Electronics,Yes
+356,Effective Java,Richard Helm,Coding,Yes
+357,Python Crash Course - Volume 1,Andrew S. Tanenbaum,Coding,Yes
+358,UML Distilled,Robert C. Martin,Software Engg,Yes
+359,Modern C++ Design,Richard Helm,Coding,Yes
+360,Software Engineering: A Practitioner's Approach,Clifford Stein,Software Engg,Yes
+361,Understanding the Linux Kernel,David J. Wetherall,OS,Yes
+362,Digital Signal Processing - 3rd Edition,Bjarne Stroustrup,Electronics,Yes
+363,Microelectronic Circuits,Ian Goodfellow,Electronics,Yes
+364,Network Analysis Architecture and Design,Henry F. Korth,Networking,Yes
+365,Agile Software Development,Bruce S. Davie,Software Engg,No
+366,Modern C++ Design,Greg Gagne,Coding,No
+367,Linux Kernel Development,Keith W. Ross,OS,Yes
+368,Programming Challenges - 2nd Edition,Herb Sutter,Algorithms,Yes
+369,Neural Networks for Pattern Recognition - Volume 1,Peter Baer Galvin,AI,No
+370,Python Crash Course - Revised Edition,Brian W. Kernighan,Coding,No
+371,Artificial Intelligence: A Guide to Intelligent Systems,David J. Wetherall,AI,Yes
+372,Digital Design and Computer Architecture - 4th Edition,Stuart Russell,Electronics,Yes
+373,The Elements of Statistical Learning,S. Sudarshan,AI,Yes
+374,Data Warehousing Fundamentals,Keith W. Ross,DBMS,No
+375,Effective C++ - Volume 2,Jim Kurose,Coding,Yes
+376,Digital Signal Processing,Herb Sutter,Electronics,Yes
+377,Electronic Devices and Circuit Theory,Andrew S. Tanenbaum,Electronics,Yes
+378,Programming Challenges,Scott Meyers,Algorithms,Yes
+379,Digital Design and Computer Architecture,William Stallings,Electronics,No
+380,Database Design for Mere Mortals - Volume 2,Stuart Russell,DBMS,Yes
+381,Algorithms in C++,Steve McConnell,Algorithms,Yes
+382,TCP/IP Illustrated - 2nd Edition,Stuart Russell,Networking,Yes
+383,Real-Time Systems - Volume 2,Herb Sutter,OS,Yes
+384,Modern C++ Design,Keith W. Ross,Coding,Yes
+385,Head First Java,David Thomas,Coding,Yes
+386,Software Architecture in Practice,Dennis M. Ritchie,Software Engg,Yes
+387,Software Architecture in Practice - 2nd Edition,Tom Mitchell,Software Engg,Yes
+388,High Performance MySQL,Bruce S. Davie,DBMS,Yes
+389,Linux Kernel Development,Kent Beck,OS,Yes
+390,Python Crash Course,Ronald L. Rivest,Coding,Yes
+391,Data Structures and Algorithms in Java,Robert C. Martin,Algorithms,Yes
+392,Operating System Design and Implementation,Henry F. Korth,OS,Yes
+393,Software Architecture in Practice,Ian Goodfellow,Software Engg,Yes
+394,Hands-On Machine Learning,David Thomas,AI,Yes
+395,Operating System Design and Implementation - 4th Edition,Gang of Four,OS,Yes
+396,Distributed Operating Systems,Tom Mitchell,OS,Yes
+397,Data Communications and Networking - 2nd Edition,Larry L. Peterson,Networking,No
+398,Database System Implementation - 2nd Edition,William Stallings,DBMS,Yes
+399,Effective Java - 3rd Edition,Yoshua Bengio,Coding,Yes
+400,Clean Architecture,Joshua Bloch,Software Engg,Yes
+401,MongoDB: The Definitive Guide,Dennis M. Ritchie,DBMS,Yes
+402,Digital Signal Processing,Andrew S. Tanenbaum,Electronics,Yes
+403,Neural Networks for Pattern Recognition,Dennis M. Ritchie,AI,No
+404,Network Security: Private Communication in a Public World - Revised Edition,Christopher Bishop,Networking,No
+405,Real-Time Systems - 2nd Edition,David J. Wetherall,OS,Yes
+406,Distributed Operating Systems,Jim Kurose,OS,No
+407,Learning Python - Volume 1,Peter Norvig,Coding,Yes
+408,Clean Architecture - 3rd Edition,Gang of Four,Software Engg,Yes
+409,Microelectronic Circuits,Kevin P. Murphy,Electronics,Yes
+410,Electronic Communication Systems - Revised Edition,Robert C. Martin,Electronics,Yes
+411,Data Structures and Algorithms in Java,Thomas H. Cormen,Algorithms,Yes
+412,Operating Systems: Three Easy Pieces,Andrew Hunt,OS,Yes
+413,Code Complete,Kent Beck,Software Engg,No
+414,Programming Challenges - Revised Edition,Keith W. Ross,Algorithms,Yes
+415,Database Management Systems - Volume 1,Andrew Hunt,DBMS,Yes
+416,Modern Operating Systems,Scott Meyers,OS,Yes
+417,AI: A Modern Approach,Andrew S. Tanenbaum,AI,Yes
+418,Data Communications and Networking,Stuart Russell,Networking,No
+419,Python Crash Course,Behrouz A. Forouzan,Coding,Yes
+420,Data Structures and Algorithms in Java,Johannes Gehrke,Algorithms,Yes
+421,Learning Python - Volume 1,Keith W. Ross,Coding,Yes
+422,Algorithm Design,David Thomas,Algorithms,Yes
+423,Analog Integrated Circuit Design,Charles E. Leiserson,Electronics,Yes
+424,The Art of Computer Programming - Volume 1,Clifford Stein,Coding,No
+425,You Don't Know JS,Douglas E. Comer,Coding,Yes
+426,Software Engineering: A Practitioner's Approach - Volume 1,Johannes Gehrke,Software Engg,Yes
+427,Database Internals,Andrei Alexandrescu,DBMS,Yes
+428,Network Security Essentials - Volume 1,Clifford Stein,Networking,Yes
+429,JavaScript: The Good Parts,Kevin P. Murphy,Coding,Yes
+430,Distributed Operating Systems - Revised Edition,Thomas H. Cormen,OS,Yes
+431,Digital Design and Computer Architecture,Thomas H. Cormen,Electronics,No
+432,Data Communications and Networking,David J. Wetherall,Networking,Yes
+433,NoSQL Distilled - 4th Edition,Kevin P. Murphy,DBMS,Yes
+434,Real-Time Systems - Volume 2,Christopher Bishop,OS,Yes
+435,Graph Algorithms,Johannes Gehrke,Algorithms,Yes
+436,Clean Architecture - 4th Edition,Yoshua Bengio,Software Engg,Yes
+437,Data Communications and Networking,Aaron Courville,Networking,Yes
+438,Analog Integrated Circuit Design,Clifford Stein,Electronics,Yes
+439,Linux Kernel Development,Tom Mitchell,OS,Yes
+440,Data Communications and Networking,Larry L. Peterson,Networking,Yes
+441,Computer Vision: Algorithms and Applications,S. Sudarshan,AI,Yes
+442,Algorithms in C++,Yoshua Bengio,Algorithms,Yes
+443,Graph Algorithms,David Thomas,Algorithms,Yes
+444,Signals and Systems - 3rd Edition,Dennis M. Ritchie,Electronics,No
+445,Digital Signal Processing,Donald E. Knuth,Electronics,Yes
+446,Computer Networks and Internets,Scott Meyers,Networking,Yes
+447,Network Analysis Architecture and Design,Jim Kurose,Networking,No
+448,SQL: The Complete Reference,Kevin P. Murphy,DBMS,Yes
+449,Computer Networks and Internets - 3rd Edition,Richard Helm,Networking,No
+450,Programming Challenges,Douglas E. Comer,Algorithms,Yes
+451,Clean Architecture,Steve McConnell,Software Engg,Yes
+452,Machine Learning: A Probabilistic Perspective,Gang of Four,AI,Yes
+453,Electronic Communication Systems,Keith W. Ross,Electronics,Yes
+454,The Mythical Man-Month,Yoshua Bengio,Software Engg,No
+455,Operating Systems: Internals and Design Principles,Ronald L. Rivest,OS,Yes
+456,Algorithm Design,Peter Baer Galvin,Algorithms,Yes
+457,Artificial Intelligence: A Guide to Intelligent Systems - 4th Edition,Joshua Bloch,AI,No
+458,TCP/IP Illustrated - 2nd Edition,Joshua Bloch,Networking,Yes
+459,Data Warehousing Fundamentals,Scott Meyers,DBMS,Yes
+460,Digital Signal Processing,Keith W. Ross,Electronics,Yes
+461,Python Crash Course,Larry L. Peterson,Coding,Yes
+462,VLSI Design,Raghu Ramakrishnan,Electronics,Yes
+463,Software Architecture in Practice,Ronald L. Rivest,Software Engg,No
+464,Routing TCP/IP,Johannes Gehrke,Networking,Yes
+465,Software Engineering: A Practitioner's Approach - 2nd Edition,Bruce S. Davie,Software Engg,No
+466,Software Testing: A Craftsman's Approach - Revised Edition,Andrew Hunt,Software Engg,Yes
+467,Neural Networks for Pattern Recognition,Kent Beck,AI,Yes
+468,Network Security: Private Communication in a Public World,Richard Helm,Networking,Yes
+469,Software Testing: A Craftsman's Approach,Erich Gamma,Software Engg,Yes
+470,Clean Architecture - 3rd Edition,Dennis M. Ritchie,Software Engg,No
+471,Head First Java,James Gosling,Coding,Yes
+472,SQL: The Complete Reference,Jim Kurose,DBMS,Yes
+473,Machine Learning: A Probabilistic Perspective,Erich Gamma,AI,No
+474,Database System Implementation,Abraham Silberschatz,DBMS,Yes
+475,Wireless Communications and Networks,James Gosling,Networking,Yes
+476,Deep Learning,Ronald L. Rivest,AI,Yes
+477,Competitive Programming,Erich Gamma,Algorithms,No
+478,Pattern Recognition and Machine Learning,David Thomas,AI,Yes
+479,Database Internals - Revised Edition,Martin Fowler,DBMS,Yes
+480,The Algorithm Design Manual - Volume 1,Douglas E. Comer,Algorithms,Yes
+481,Operating Systems: Internals and Design Principles,Aaron Courville,OS,Yes
+482,Electronic Devices and Circuit Theory - Revised Edition,Clifford Stein,Electronics,No
+483,Electronic Devices and Circuit Theory,Raghu Ramakrishnan,Electronics,Yes
+484,Database System Implementation,Andrei Alexandrescu,DBMS,Yes
+485,Power Electronics,Erich Gamma,Electronics,Yes
+486,Database Management Systems - Revised Edition,Herb Sutter,DBMS,Yes
+487,Graph Algorithms,Stuart Russell,Algorithms,No
+488,The Design of the UNIX Operating System,Christopher Bishop,OS,Yes
+489,Operating System Design and Implementation,Henry F. Korth,OS,Yes
+490,Machine Learning: A Probabilistic Perspective,David Thomas,AI,Yes
+491,MongoDB: The Definitive Guide,Robert C. Martin,DBMS,Yes
+492,Algorithms in C++,Bjarne Stroustrup,Algorithms,Yes
+493,Understanding the Linux Kernel,Martin Fowler,OS,Yes
+494,Fundamentals of Database Systems,Behrouz A. Forouzan,DBMS,Yes
+495,Database Management Systems - Volume 1,Ronald L. Rivest,DBMS,Yes
+496,Deep Learning,Ian Goodfellow,AI,Yes
+497,Modern C++ Design,Scott Meyers,Coding,Yes
+498,Artificial Intelligence: A Guide to Intelligent Systems,Scott Meyers,AI,Yes
+499,Database Design for Mere Mortals,Erich Gamma,DBMS,Yes
+500,The Elements of Statistical Learning,Yoshua Bengio,AI,Yes
+501,Routing TCP/IP,Stuart Russell,Networking,No
+502,Database System Implementation,Tom Mitchell,DBMS,No
+503,Network Security: Private Communication in a Public World - 2nd Edition,Larry L. Peterson,Networking,Yes
+504,Programming Pearls,Bruce S. Davie,Coding,Yes
+505,MongoDB: The Definitive Guide,Abraham Silberschatz,DBMS,Yes
+506,Reinforcement Learning: An Introduction,Henry F. Korth,AI,Yes
+507,Data Warehousing Fundamentals,Steve McConnell,DBMS,No
+508,Digital Design and Computer Architecture - Revised Edition,Johannes Gehrke,Electronics,Yes
+509,Graph Algorithms,Bruce S. Davie,Algorithms,Yes
+510,You Don't Know JS,Scott Meyers,Coding,Yes
+511,Database System Implementation - Volume 2,Stuart Russell,DBMS,Yes
+512,Routing TCP/IP,Peter Norvig,Networking,No
+513,JavaScript: The Good Parts - Revised Edition,James Gosling,Coding,No
+514,Digital Design and Computer Architecture,Stuart Russell,Electronics,Yes
+515,Software Architecture in Practice,Raghu Ramakrishnan,Software Engg,Yes
+516,Distributed Operating Systems - Volume 1,Thomas H. Cormen,OS,No
+517,Hands-On Machine Learning - Revised Edition,Clifford Stein,AI,Yes
+518,Signals and Systems,Andrew Hunt,Electronics,Yes
+519,Wireless Communications and Networks,Ronald L. Rivest,Networking,Yes
+520,Fundamentals of Database Systems,Kevin P. Murphy,DBMS,Yes
+521,Programming Pearls,David J. Wetherall,Coding,Yes
+522,Computer Networking: A Top-Down Approach,David J. Wetherall,Networking,Yes
+523,Graph Algorithms - Revised Edition,Dennis M. Ritchie,Algorithms,Yes
+524,SQL: The Complete Reference,Peter Norvig,DBMS,Yes
+525,Dynamic Programming for Coding Interviews,Johannes Gehrke,Algorithms,Yes
+526,You Don't Know JS,Kevin P. Murphy,Coding,Yes
+527,Design Patterns: Elements of Reusable Object-Oriented Software - 4th Edition,Henry F. Korth,Software Engg,Yes
+528,Electronic Communication Systems,Thomas H. Cormen,Electronics,Yes
+529,Microelectronic Circuits - 4th Edition,Johannes Gehrke,Electronics,Yes
+530,Database Internals,Robert C. Martin,DBMS,Yes
+531,Graph Algorithms - 3rd Edition,Peter Baer Galvin,Algorithms,Yes
+532,Distributed Operating Systems,Martin Fowler,OS,No
+533,Modern C++ Design,Andrew S. Tanenbaum,Coding,No
+534,Data Warehousing Fundamentals,Aaron Courville,DBMS,No
+535,SQL: The Complete Reference,Ian Goodfellow,DBMS,Yes
+536,The Art of Computer Programming,Herb Sutter,Coding,Yes
+537,Design Patterns: Elements of Reusable Object-Oriented Software - Revised Edition,James Gosling,Software Engg,Yes
+538,MongoDB: The Definitive Guide - Revised Edition,Fred Brooks,DBMS,Yes
+539,Code Complete - Volume 2,Greg Gagne,Software Engg,Yes
+540,Modern C++ Design,Gang of Four,Coding,Yes
+541,Operating Systems: Three Easy Pieces - Revised Edition,William Stallings,OS,Yes
+542,The Mythical Man-Month - Revised Edition,Scott Meyers,Software Engg,Yes
+543,Pattern Recognition and Machine Learning,Henry F. Korth,AI,Yes
+544,Computer Networks and Internets,Yoshua Bengio,Networking,Yes
+545,Algorithm Design,Erich Gamma,Algorithms,Yes
+546,UML Distilled - 2nd Edition,Andrei Alexandrescu,Software Engg,Yes
+547,Agile Software Development,Joshua Bloch,Software Engg,Yes
+548,Network Analysis Architecture and Design,Christopher Bishop,Networking,Yes
+549,Python Crash Course,Greg Gagne,Coding,Yes
+550,Signals and Systems,Tom Mitchell,Electronics,Yes
+551,Reinforcement Learning: An Introduction,Andrew Hunt,AI,Yes
+552,Distributed Operating Systems,Martin Fowler,OS,No
+553,Algorithms in C++,Aaron Courville,Algorithms,Yes
+554,Digital Design and Computer Architecture - Volume 2,Dennis M. Ritchie,Electronics,Yes
+555,Electronic Communication Systems,Henry F. Korth,Electronics,Yes
+556,Agile Software Development,Dennis M. Ritchie,Software Engg,Yes
+557,Competitive Programming - Revised Edition,Brian W. Kernighan,Algorithms,Yes
+558,Head First Java,Scott Meyers,Coding,Yes
+559,Network Security: Private Communication in a Public World - Volume 2,Andrew S. Tanenbaum,Networking,Yes
+560,Operating System Design and Implementation - 3rd Edition,Donald E. Knuth,OS,Yes
+561,Windows Internals,Richard Helm,OS,No
+562,Advanced Data Structures,Andrei Alexandrescu,Algorithms,Yes
+563,Data Warehousing Fundamentals - Revised Edition,Johannes Gehrke,DBMS,Yes
+564,Analog Integrated Circuit Design - Revised Edition,Yoshua Bengio,Electronics,Yes
+565,Reinforcement Learning: An Introduction,Raghu Ramakrishnan,AI,Yes
+566,The Art of Computer Programming,Greg Gagne,Coding,Yes
+567,Database System Implementation,Donald E. Knuth,DBMS,Yes
+568,TCP/IP Illustrated,Abraham Silberschatz,Networking,Yes
+569,Artificial Intelligence: A Guide to Intelligent Systems,Ian Goodfellow,AI,No
+570,Power Electronics - Volume 2,S. Sudarshan,Electronics,Yes
+571,Power Electronics,Ronald L. Rivest,Electronics,Yes
+572,SQL: The Complete Reference - 4th Edition,Donald E. Knuth,DBMS,No
+573,Programming Challenges,Douglas E. Comer,Algorithms,Yes
+574,The Elements of Statistical Learning - Volume 2,Yoshua Bengio,AI,Yes
+575,Network Security: Private Communication in a Public World,Steve McConnell,Networking,Yes
+576,Linux Kernel Development,Robert C. Martin,OS,Yes
+577,The Design of the UNIX Operating System,Andrei Alexandrescu,OS,Yes
+578,Advanced Data Structures,Johannes Gehrke,Algorithms,Yes
+579,Database System Implementation - Volume 2,Aaron Courville,DBMS,Yes
+580,Digital Design and Computer Architecture - Volume 2,Peter Norvig,Electronics,No
+581,C++ Primer,Tom Mitchell,Coding,Yes
+582,SQL: The Complete Reference,Aaron Courville,DBMS,Yes
+583,Artificial Intelligence: A Guide to Intelligent Systems - Volume 2,Raghu Ramakrishnan,AI,Yes
+584,Computer Vision: Algorithms and Applications - 3rd Edition,Dennis M. Ritchie,AI,Yes
+585,Real-Time Systems,Yoshua Bengio,OS,Yes
+586,Refactoring: Improving the Design of Existing Code,Jim Kurose,Software Engg,Yes
+587,VLSI Design,Johannes Gehrke,Electronics,Yes
+588,TCP/IP Illustrated,Scott Meyers,Networking,Yes
+589,Refactoring: Improving the Design of Existing Code,Richard Helm,Software Engg,Yes
+590,Operating System Design and Implementation,Steve McConnell,OS,Yes
+591,Reinforcement Learning: An Introduction,Erich Gamma,AI,Yes
+592,Hands-On Machine Learning,Andrew S. Tanenbaum,AI,No
+593,The Design of the UNIX Operating System,Jim Kurose,OS,Yes
+594,Linux Kernel Development,Stuart Russell,OS,Yes
+595,Operating System Design and Implementation - 3rd Edition,Martin Fowler,OS,Yes
+596,Windows Internals - Revised Edition,Thomas H. Cormen,OS,Yes
+597,Software Testing: A Craftsman's Approach - Revised Edition,Gang of Four,Software Engg,No
+598,Programming Challenges,Andrew Hunt,Algorithms,Yes
+599,Data Communications and Networking,William Stallings,Networking,Yes
+600,Computer Networks and Internets,Bruce S. Davie,Networking,Yes
